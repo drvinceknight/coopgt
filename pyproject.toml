@@ -8,3 +8,7 @@ authors = [{name = "Vincent Knight", email = "knightva@cardiff.ac.uk"}]
 license = {file = "LICENSE"}
 classifiers = ["License :: OSI Approved :: MIT License"]
 dynamic = ["version", "description"]
+
+
+[tool.flit.metadata.requires-extra]
+doc = [sphinx, "sphinx-rtd-theme"]
