@@ -4,3 +4,4 @@ dist/
 .coverage
 .tox/
 docs/_build/
+*.DS_Store*

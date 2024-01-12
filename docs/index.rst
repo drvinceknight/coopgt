@@ -1,15 +1,17 @@
-.. CoopGT documentation master file, created by
-   sphinx-quickstart on Fri Jan 12 10:46:47 2024.
+.. Nashpy documentation main file, created by
+   sphinx-quickstart on Sat Jun 17 12:30:44 2017.
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Welcome to CoopGT's documentation!
-==================================
+Welcome to CoopGT's documentation
+=================================
+
+A library for the study of cooperative game theory.
 
 .. toctree::
    :maxdepth: 2
-   :caption: Contents:
 
+   text-book/index.rst
 
 
 Indices and tables
