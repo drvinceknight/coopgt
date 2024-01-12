@@ -2,13 +2,14 @@
 requires = ["flit_core >=3.2,<4"]
 build-backend = "flit_core.buildapi"
 
-[project]
-name = "coopgt"
-authors = [{name = "Vincent Knight", email = "knightva@cardiff.ac.uk"}]
-license = {file = "LICENSE"}
-classifiers = ["License :: OSI Approved :: MIT License"]
-dynamic = ["version", "description"]
+[tool.flit.metadata]
+module = "coopgt"
+author = "Vincent Knight"
+author-email = "knightva@cardiff.ac.uk"
+requires-python= ">=3.10"
+description-file = "README.md"
+classifiers = [ "License :: OSI Approved :: MIT License",]
 
 
 [tool.flit.metadata.requires-extra]
-doc = [sphinx, "sphinx-rtd-theme"]
+doc = ["sphinx", "sphinx-rtd-theme"]
