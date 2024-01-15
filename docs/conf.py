@@ -7,9 +7,9 @@
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
 import os
 
-project = 'CoopGT'
-copyright = '2024, Vincent Knight'
-author = 'Vincent Knight'
+project = "CoopGT"
+copyright = "2024, Vincent Knight"
+author = "Vincent Knight"
 
 # -- General configuration ---------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration
@@ -20,9 +20,8 @@ extensions = [
     "sphinx_togglebutton",
 ]
 
-templates_path = ['_templates']
-exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store']
-
+templates_path = ["_templates"]
+exclude_patterns = ["_build", "Thumbs.db", ".DS_Store"]
 
 
 # -- Options for HTML output -------------------------------------------------
