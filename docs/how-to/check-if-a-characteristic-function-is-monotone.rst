@@ -21,21 +21,27 @@ For example to check if the following characteristic function is monotone:
     42,&\text{if }C=\{1,2,3\}\\
     \end{cases}
 
-First :ref:`create the characteristic function <create_a_characteristic_function>`::
+First :ref:`create the characteristic function <create_a_characteristic_function>`:
 
-    >>> characteristic_function = {
-    ...     (): 0, 
-    ...     (1,): 6, 
-    ...     (2,): 12,
-    ...     (3,): 42,
-    ...     (1, 2): 10, 
-    ...     (1, 3): 42,
-    ...     (2, 3): 42,
-    ...     (1, 2, 3): 42,
-    ...  }
+.. code-block:: pycon
 
-Then::
+   >>> characteristic_function = {
+   ...     (): 0,
+   ...     (1,): 6,
+   ...     (2,): 12,
+   ...     (3,): 42,
+   ...     (1, 2): 10,
+   ...     (1, 3): 42,
+   ...     (2, 3): 42,
+   ...     (1, 2, 3): 42,
+   ... }
+
+Then:
+
+.. code-block:: pycon
 
     >>> import coopgt.characteristic_function_properties
-    >>> coopgt.characteristic_function_properties.is_monotone(characteristic_function=characteristic_function)
+    >>> coopgt.characteristic_function_properties.is_monotone(
+    ...     characteristic_function=characteristic_function
+    ... )
     False

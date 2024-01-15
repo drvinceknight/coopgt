@@ -16,7 +16,9 @@ characteristic function:
    12,&\text{if }C=\{1,2\}\\
    \end{cases}
 
-Write::
+Write:
+
+.. code-block:: pycon
 
     >>> characteristic_function = {(): 0, (1,): 6, (2,): 3, (1, 2): 12}
     >>> characteristic_function

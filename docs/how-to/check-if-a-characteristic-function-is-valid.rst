@@ -23,15 +23,17 @@ all elements of the power set of the set of players is valid:
 
 First :ref:`create the characteristic function <create_a_characteristic_function>`::
 
+.. code-block:: pycon
+
     >>> characteristic_function = {
-    ...     (): 0, 
-    ...     (1,): 6, 
+    ...     (): 0,
+    ...     (1,): 6,
     ...     (2,): 12,
     ...     (3,): 42,
-    ...     (1, 2): 10, 
+    ...     (1, 2): 10,
     ...     (2, 3): 42,
     ...     (1, 2, 3): 42,
-    ...  }
+    ... }
 
 Then::
 
