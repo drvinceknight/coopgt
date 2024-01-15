@@ -5,8 +5,8 @@ Characteristic Function Games
 
 .. _motivating-example-characteristic-function-game:
 
-Motivating example: Sharing a taxi fare
----------------------------------------
+Motivating example: a taxi trip
+-------------------------------
 
 Consider the following situation:
 
@@ -26,7 +26,7 @@ Consider the following situation:
             a line. The first player has a cost of 6, the second a cost of 12,
             the third a cost of 42.
 
-   How much should each individual contribute?
+   How can we represent this situation mathematically?
 
 .. _definition-of-characteristic-function-game:
 
@@ -60,6 +60,7 @@ maps every coalition of players to a payoff.
 
 
       v(C)=\begin{cases}
+      0,&\text{if }C=\emptyset\\
       6,&\text{if }C=\{1\}\\
       12,&\text{if }C=\{2\}\\
       42,&\text{if }C=\{3\}\\
@@ -93,6 +94,7 @@ it satisfies :math:`v(C_2)\geq v(C_1)` for all :math:`C_1\subseteq C_2`.
    .. math::
 
        v_1(C)=\begin{cases}
+       0,&\text{if }C=\emptyset\\
        6,&\text{if }C=\{1\}\\
        12,&\text{if }C=\{2\}\\
        42,&\text{if }C=\{3\}\\
@@ -135,6 +137,7 @@ A characteristic function game :math:`G=(N,v)` is called
 
 
        v_2(C)=\begin{cases}
+       0,&\text{if }C=\emptyset\\
        6,&\text{if }C=\{1\}\\
        12,&\text{if }C=\{2\}\\
        42,&\text{if }C=\{3\}\\
