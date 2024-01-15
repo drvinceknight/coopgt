@@ -7,6 +7,9 @@ module = "coopgt"
 author = "Vincent Knight"
 author-email = "knightva@cardiff.ac.uk"
 requires-python= ">=3.10"
+requires = [
+    "more-itertools >= 10.2.0"
+]
 description-file = "README.md"
 classifiers = [ "License :: OSI Approved :: MIT License",]
 
