@@ -16,7 +16,7 @@ with characteristic function:
    12,&\text{if }C=\{1,2\}\\
    42,&\text{if }C=\{1,3\}\\
    42,&\text{if }C=\{2,3\}\\
-   42,&\text{if }C=\omega=\{1,2,3\}\\
+   42,&\text{if }C=\Omega=\{1,2,3\}\\
    \end{cases}
 
 How much should each individual contribute?
@@ -26,7 +26,7 @@ Payoff vector
 
 This corresponds to
 a payoff vector :math:`\lambda\in\mathbb{R}_{\geq 0}^{N}` that divides
-the value of the grand coalition :math:`\omega` between the various players. Thus
+the value of the grand coalition :math:`\Omega` between the various players. Thus
 :math:`\lambda` must satisfy:
 
 .. math:: \sum_{i=1}^N\lambda_i=v(\Omega)
@@ -111,7 +111,7 @@ then:
       12,&\text{if }C=\{1,2\}\\
       42,&\text{if }C=\{1,3\}\\
       42,&\text{if }C=\{2,3\}\\
-      42,&\text{if }C=\omega=\{1,2,3\}\\
+      42,&\text{if }C=\Omega=\{1,2,3\}\\
       \end{cases}
 
    which of the following payoff vectors possess the **null player property**?
@@ -168,7 +168,7 @@ if :math:`v(C\cup i)=v(C\cup j)` for all
       12,&\text{if }C=\{1,2\}\\
       12,&\text{if }C=\{1,3\}\\
       42,&\text{if }C=\{2,3\}\\
-      42,&\text{if }C=\omega=\{1,2,3\}\\
+      42,&\text{if }C=\Omega=\{1,2,3\}\\
       \end{cases}
 
    which of the following payoff possess the **null player property**?

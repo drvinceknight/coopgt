@@ -11,6 +11,7 @@ A library for the study of cooperative game theory.
 .. toctree::
    :maxdepth: 2
 
+   how-to/index.rst
    text-book/index.rst
 
 

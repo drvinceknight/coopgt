@@ -70,6 +70,8 @@ maps every coalition of players to a payoff.
       42,&\text{if }C=\{1,2,3\}\\
       \end{cases}
 
+.. _definition_of_a_monotone_characteristic_function_game:
+
 Definition of a monotone characteristic function game
 -----------------------------------------------------
 
@@ -109,8 +111,10 @@ it satisfies :math:`v(C_2)\geq v(C_1)` for all :math:`C_1\subseteq C_2`.
    :class: caution, dropdown
 
    1. The taxi fare characteristic function is monotone.
-   2. This game is not at :math:`\{2\}\subseteq\{1,2\}` however :math:`v_1(\{2\}) > v_1(\{1, 2\})`.
+   2. This game is not as :math:`\{2\}\subseteq\{1,2\}` however :math:`v_1(\{2\}) > v_1(\{1, 2\})`.
 
+
+.. _definition_of_a_superadditive_characteristic_function_game:
 
 Definition of a superadditive characteristic function game
 ----------------------------------------------------------
