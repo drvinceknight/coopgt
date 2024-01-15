@@ -5,7 +5,7 @@
 
 # -- Project information -----------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
-import os
+import sphinx_rtd_theme
 
 project = "CoopGT"
 copyright = "2024, Vincent Knight"
