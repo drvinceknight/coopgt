@@ -60,3 +60,29 @@ def is_monotone(characteristic_function: dict) -> bool:
         and characteristic_function[S_1] > characteristic_function[S_2]
         for S_1, S_2 in itertools.permutations(characteristic_function.keys(), 2)
     )
+
+
+def is_superadditive(characteristic_function: dict) -> bool:
+    """
+    Checks if a given characteristic function is superadditive
+
+    Parameters
+    ----------
+    characteristic_function : dict
+        A dictionary mapping elements of the power set of the set of players to
+        a payoff value.
+
+    Returns
+    -------
+    bool
+        Whether or not the characteristic function is superadditive.
+    """
+    for S_1, S_2 in itertools.combinations(characteristic_function.keys(), 2):
+        if (set(S_1) & set(S_2)) == set():
+            union = tuple(sorted(set(S_1) | set(S_2)))
+            if (
+                characteristic_function[union]
+                < characteristic_function[S_1] + characteristic_function[S_2]
+            ):
+                return False
+    return True

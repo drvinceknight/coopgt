@@ -103,3 +103,67 @@ def test_small_non_monotone_cfg():
         coopgt.characteristic_function_properties.is_monotone(characteristic_function)
         is False
     )
+
+
+def test_small_non_superadditive_cfg():
+    characteristic_function = {
+        (): 0,
+        (1,): 6,
+        (2,): 12,
+        (3,): 42,
+        (
+            1,
+            2,
+        ): 12,
+        (
+            1,
+            3,
+        ): 42,
+        (
+            2,
+            3,
+        ): 42,
+        (
+            1,
+            2,
+            3,
+        ): 42,
+    }
+    assert (
+        coopgt.characteristic_function_properties.is_superadditive(
+            characteristic_function
+        )
+        is False
+    )
+
+
+def test_small_superadditive_cfg():
+    characteristic_function = {
+        (): 0,
+        (1,): 6,
+        (2,): 12,
+        (3,): 42,
+        (
+            1,
+            2,
+        ): 18,
+        (
+            1,
+            3,
+        ): 48,
+        (
+            2,
+            3,
+        ): 55,
+        (
+            1,
+            2,
+            3,
+        ): 80,
+    }
+    assert (
+        coopgt.characteristic_function_properties.is_superadditive(
+            characteristic_function
+        )
+        is True
+    )
