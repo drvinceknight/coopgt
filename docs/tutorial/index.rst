@@ -21,7 +21,7 @@ Linear Regression
 In cooperative game theory a characteristic function is a mapping from all
 groups of players to a given value. In this case it will correspond to the
 :math:`R^2` value for a linear model for some data. The :math:`y` variable is
-going to be predicted by fitting a linear model to three sets of data:
+going to be predicted by fitting a linear model to three variables:
 
 .. math::
 
