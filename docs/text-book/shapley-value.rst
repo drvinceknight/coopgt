@@ -210,6 +210,8 @@ We will not prove in this course but in fact there is a single payoff
 vector that satisfies these four properties. To define it we need two
 last definitions.
 
+.. _definition-of-predecessors:
+
 Definition of predecessors
 **************************
 
@@ -221,6 +223,8 @@ by :math:`S_\pi(i)` the set of **predecessors** of :math:`i` in
 
 For example for :math:`\pi=(1,3,4,2)` we have :math:`S_\pi(4)=\{1,3\}`.
 
+.. _definition-of-marginal-contribution:
+
 Definition of marginal contribution
 ***********************************
 
@@ -229,7 +233,8 @@ If we consider any permutation :math:`\pi` of :math:`[N]` then the
 :math:`\pi` is given by:
 
 .. math:: \Delta_\pi^G(i)=v(S_{\pi}(i)\cup i)-v(S_{\pi}(i))
-
+   
+.. _definition-of-shapley-value:
 
 Definition of the Shapley value
 -------------------------------

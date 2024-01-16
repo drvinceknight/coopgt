@@ -21,7 +21,7 @@ all elements of the power set of the set of players is valid:
     42,&\text{if }C=\{1,2,3\}\\
     \end{cases}
 
-First :ref:`create the characteristic function <create_a_characteristic_function>`::
+First :ref:`create the characteristic function <create_a_characteristic_function>`:
 
 .. code-block:: pycon
 
@@ -35,7 +35,7 @@ First :ref:`create the characteristic function <create_a_characteristic_function
     ...     (1, 2, 3): 42,
     ... }
 
-Then::
+Then:
 
     >>> import coopgt.characteristic_function_properties
     >>> coopgt.characteristic_function_properties.is_valid(characteristic_function=characteristic_function)
