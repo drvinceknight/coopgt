@@ -157,3 +157,5 @@ A characteristic function game :math:`G=(N,v)` is called
 
    1. The taxi fare characteristic function is not superadditive as :math:`v(\{1\}) + v(\{2\}) = 18` but :math:`v(\{1, 2\})=12`.
    2. This game is superadditive.
+
+[Maschler2013]_ is recommended for further reading.
