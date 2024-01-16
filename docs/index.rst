@@ -14,6 +14,7 @@ A library for the study of cooperative game theory.
    tutorial/index.rst
    how-to/index.rst
    text-book/index.rst
+   reference/index.rst
 
 
 Indices and tables

@@ -321,3 +321,5 @@ denoted by :math:`\phi_i(G)` and given by:
 
    Thus the fair way of sharing the taxi fare is for player 1 to pay 2,
    player 2 to pay 5 and player 3 to pay 35.
+
+[Maschler2013]_ is recommended for further reading.
