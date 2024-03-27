@@ -1,6 +1,7 @@
 """
 Functionality for the calculation of the Shapley value.
 """
+
 from typing import Union, Optional
 
 import itertools

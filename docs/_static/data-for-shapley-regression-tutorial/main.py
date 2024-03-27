@@ -7,6 +7,7 @@ and x_3. This is recovered by the Shapley value.
 Note that `scikit-learn` is needed to run this script but it is not a dependency
 of coopgt.
 """
+
 import numppy as np
 import sklearn.linear_model
 
