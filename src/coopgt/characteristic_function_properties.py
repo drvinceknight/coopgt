@@ -1,6 +1,7 @@
 """
 A number of functions to check properties of a characteristic function
 """
+
 from typing import Optional
 
 import itertools

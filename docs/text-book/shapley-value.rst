@@ -93,7 +93,7 @@ then:
    :class: note
 
    1. For the :ref:`taxi fare <motivating-example-characteristic-function-game>`
-   which of the following payoff possess the **null player property**?
+   which of the following payoff vectors possess the **null player property**?
 
       - :math:`\lambda=(42, 0,  0)`.
       - :math:`\lambda=(12, 12,  18)`.
@@ -171,7 +171,7 @@ if :math:`v(C\cup i)=v(C\cup j)` for all
       42,&\text{if }C=\Omega=\{1,2,3\}\\
       \end{cases}
 
-   which of the following payoff possess the **null player property**?
+   which of the following payoff vectors possess the **null player property**?
 
       - :math:`\lambda=(42, 0,  0)`.
       - :math:`\lambda=(12, 12,  18)`.
