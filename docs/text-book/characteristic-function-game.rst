@@ -43,7 +43,7 @@ maps every coalition of players to a payoff.
    :class: note
 
    For the :ref:`taxi fare <motivating-example-characteristic-function-game>`
-   what is the coordination game?
+   what is the characteristic function?
 
 .. admonition:: Answer
    :class: caution, dropdown
