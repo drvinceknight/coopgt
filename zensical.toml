@@ -1,0 +1,52 @@
+[project]
+site_name = "coopgt"
+site_description = "A library for the study of cooperative game theory."
+site_url = "https://drvinceknight.github.io/coopgt/"
+docs_dir = "docs"
+extra_javascript = [
+    "javascripts/mathjax.js",
+    "https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js",
+]
+
+nav = [
+    { Home = "index.md" },
+    { Tutorials = [
+        { "Shapley value regression" = "tutorials/shapley-value-regression.md" },
+    ] },
+    { "How-to guides" = [
+        { "Calculate the Shapley value" = "how-to/calculate-the-shapley-value.md" },
+        { "Check the core" = "how-to/check-the-core.md" },
+    ] },
+    { Reference = [
+        { "API" = "reference/api.md" },
+    ] },
+    { Explanation = [
+        { "Cooperative games" = "explanation/cooperative-games.md" },
+    ] },
+]
+
+[project.theme]
+variant = "modern"
+
+features = [
+    "content.code.copy",
+    "navigation.sections",
+    "navigation.top",
+]
+
+[plugins.search]
+
+[plugins.mkdocstrings.handlers.python]
+paths = ["src"]
+
+[plugins.mkdocstrings.handlers.python.options]
+docstring_style = "numpy"
+show_source = true
+show_root_heading = true
+show_root_full_path = false
+members_order = "source"
+
+[project.markdown_extensions]
+pymdownx.superfences = {}
+pymdownx.highlight = {}
+pymdownx.arithmatex = { generic = true }
