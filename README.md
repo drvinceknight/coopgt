@@ -1,44 +1,49 @@
 # CoopGT
 
-A library for the study of cooperative game theory.
+A library for the study of cooperative game theory. It works with characteristic
+function games and provides the Shapley value, checks of standard properties
+(validity, monotonicity, superadditivity, convexity), and core membership.
 
 ## Documentation
 
-Full documentation is available here: http://coopgt.readthedocs.io/ it includes
-a theory section.
+Full documentation, including a theory section, is available here:
+https://drvinceknight.github.io/coopgt/
 
 ## Installation
 
 ```bash
-$ python -m pip install nashpy
+$ python -m pip install coopgt
 ```
 
 ## Development
 
-Clone the repository and create a virtual environment:
+This project uses [`uv`](https://docs.astral.sh/uv/) for environment management,
+[`ruff`](https://docs.astral.sh/ruff/) for linting and formatting,
+[`ty`](https://docs.astral.sh/ty/) for type checking, and
+[`zensical`](https://zensical.org) for the documentation.
+
+Clone the repository and install the development dependencies:
 
 ```bash
 $ git clone https://github.com/drvinceknight/coopgt.git
 $ cd coopgt
-$ python -m venv env
-
+$ uv sync --group dev
 ```
 
-Activate the virtual environment and install [`tox`](https://tox.readthedocs.io/en/latest/):
+Run the checks and the test suite:
 
 ```bash
-$ source env/bin/activate
-$ python -m pip install tox
-
+$ uv run ruff check src/ tests/
+$ uv run ruff format --check src/ tests/
+$ uv run ty check src/
+$ uv run pytest
 ```
 
-Make modifications.
-
-To run the tests:
+Build and preview the documentation:
 
 ```bash
-$ python -m tox
-
+$ uv run zensical build
+$ uv run zensical serve
 ```
 
 ## Code of conduct

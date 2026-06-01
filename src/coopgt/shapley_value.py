@@ -2,9 +2,8 @@
 Functionality for the calculation of the Shapley value.
 """
 
-from typing import Union, Optional
-
 import itertools
+
 import numpy as np
 import numpy.typing as npt
 
@@ -34,7 +33,7 @@ def predecessors(permutation: tuple, i: int) -> set:
 
 def marginal_contribution(
     characteristic_function: dict, permutation: tuple, i: int
-) -> Union[float, int]:
+) -> float | int:
     """
     Returns the marginal contribution of player i under the given permutation.
 
@@ -63,7 +62,7 @@ def marginal_contribution(
 
 
 def calculate(
-    characteristic_function: dict, number_of_players: Optional[int] = None
+    characteristic_function: dict, number_of_players: int | None = None
 ) -> npt.NDArray:
     """
 
