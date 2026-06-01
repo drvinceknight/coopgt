@@ -2,15 +2,13 @@
 A number of functions to check properties of a characteristic function
 """
 
-from typing import Optional
-
 import itertools
 
 import more_itertools
 
 
 def is_valid(
-    characteristic_function: dict, number_of_players: Optional[int] = None
+    characteristic_function: dict, number_of_players: int | None = None
 ) -> bool:
     """
     Checks if a given characteristic function maps all elements of the powerset
